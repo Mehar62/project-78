@@ -1,0 +1,37 @@
+<html><head>
+  <link rel="stylesheet" href="style.css">  
+  <title> Family Book</title></head>
+  
+  <body>
+    <h1> Family Book</h1>
+    <hr> <hr>
+    <img id="family_img" src="6546308_preview.png">
+    <h3 id="one">1. Our Family Book</h3>
+     <button type="button" class="btn" onclick="family()">Next</button>
+<hr>
+   <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-85417367-1"></script><script>
+   var names=[
+   "2. My Father (Lakhwinder Singh)",
+   "3. My Mother (Harjeet Kaur)",
+   "4. My Sister (Swanti)",
+   "5. Me (Mehar Singh Randhawa)",
+   "6. My second Sister (Supreet Kaur)"
+   ];
+ var images=[
+   "papa.jpg",
+   "7a5a99f0-1737-44d5-9902-fa601364d11d.jpg",
+   "2b740ecd-97cc-475e-973d-755fa111718b.jpg",
+   "b2a2b903-d0dc-4192-bf6d-72cf64a05e32.jpg",
+   "92fa4a25-2ca9-4515-a5cb-00c8b0a39592.jpg"
+ ];
+ var i=0;
+ function family(){
+   document.getElementById("one").innerHTML=names[i];
+   document.getElementById("family_img").src=images[i];
+   i++;
+   if(i==5){
+     i=0;
+   }}
+  </script>
+  <script async="" src="https://drv.tw/inc/wd.js"></script>
+</body></html>
